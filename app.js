@@ -11,6 +11,6 @@ form.addEventListener("submit", function (e) {
     console.log(isNaN(value));
 
     if (isNaN(value) || value < 0 || value > 9) {
-        result.innerHTML = '<p class="result">${}</p>';
+        result.innerHTML = '<p class="result">${text[0]}</p>';
     }
 });
