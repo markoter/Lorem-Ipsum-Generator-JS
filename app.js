@@ -9,9 +9,11 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
     const value = parseInt(amount.value); //without parse it will be string
     console.log(isNaN(value));
+    const random = Math.floor(Math.random() * text.length);
 
     if (isNaN(value) || value < 0 || value > 9) {
-        result.innerHTML = `<p class="result">${text[0]}</p>`;
+        console.log(random);
+        result.innerHTML = `<p class="result">${text[random]}</p>`;
     }
     else {
         let tempText = text.slice(0, value);
