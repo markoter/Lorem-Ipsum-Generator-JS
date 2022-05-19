@@ -27,6 +27,9 @@ form.addEventListener("submit", function (e) {
     }
     else {
         let tempText = text.slice(0, value);
-        result.innerHTML = `<p class ="result">${tempText}</p>`;
+        tempText = tempText.map(function(item) {
+            return `<p class ="result">${item}</p>`;
+        }).join("");
+        result.innerHTML = tempText;
     }
 });
