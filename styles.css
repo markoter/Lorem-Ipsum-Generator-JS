@@ -6,6 +6,7 @@
   --color-dark-2: #165F8C;
   --color-light-1: #27B9F2;
   --color-light-2: #30DFF2;
+  --color-red: #8C0E03;
   --color-black: #0D0D0D;
   --color-white: white;
   --color-background: #F2F2F2;
@@ -19,6 +20,9 @@ body {
 }
 
 .topbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
   text-align: center;
   text-transform: capitalize;
   background-color: antiquewhite;
@@ -30,6 +34,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 8rem;
 }
 
 .section-center {
@@ -39,6 +44,12 @@ main {
   justify-content: flex-start;
   max-width: 50rem;
   padding: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  word-spacing: 1rem;
 }
 
 h3 {
@@ -60,6 +71,7 @@ h3 {
 }
 
 .img-text {
+  color: var(--color-red);
   text-shadow: 0 0 10px var(--color-white);
 }
 /*# sourceMappingURL=styles.css.map */
