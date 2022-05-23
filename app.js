@@ -44,18 +44,18 @@ form.addEventListener("submit", function (e) {
     }
 });
 
-import readFileSync from 'fs';
-//const {readFileSync, promises: fsPromises} = require('fs');
+// import readFileSync from 'fs';
+// //const {readFileSync, promises: fsPromises} = require('fs');
 
-// ✅ read file SYNCHRONOUSLY
-function syncReadFile(filename) {
-    const contents = readFileSync(filename, 'utf-8');
+// // ✅ read file SYNCHRONOUSLY
+// function syncReadFile(filename) {
+//     const contents = readFileSync(filename, 'utf-8');
 
-    const arr = contents.split(/\r?\n/);
+//     const arr = contents.split(/\r?\n/);
 
-    console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
+//     console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
 
-    return arr;
-}
+//     return arr;
+// }
 
-syncReadFile('./cicero.txt');
+// syncReadFile('./cicero.txt');
