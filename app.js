@@ -32,7 +32,7 @@ form.addEventListener("submit", function (e) {
     const value = parseInt(amount.value); //without parse it will be string
     const random = Math.floor(Math.random() * text.length);
 
-    if (isNaN(value) || value < 0 || value > 9) {
+    if (isNaN(value) || value <= 0 || value > 20) {
         result.innerHTML = `<p class="result">${text[random]}</p>`;
     }
     else {
