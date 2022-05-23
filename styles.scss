@@ -11,7 +11,7 @@
   --color-dark-2: #165F8C;
   --color-light-1: #27B9F2;
   --color-light-2: #30DFF2;
-  --color-red: #8C0E03;
+  --color-red: #8C0E03  ;
   --color-black: #0D0D0D;
   --color-white: white;
   --color-background: #F2F2F2;
@@ -29,11 +29,22 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  text-align: center;
-  text-transform: capitalize;
   background-color: antiquewhite;
-  background-image: url("img/yoal-desurmont-ddawgJ7eGDA-unsplash.jpg");
-  height: 8rem;
+  background-image: url("img/elcarito-8kPgWovE68k-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-text {
+    color: var(--color-red);
+    text-shadow: 0 0 2px var(--color-white);
+    text-align: center;
+    text-transform: capitalize;
+  }
 }
 
 main {
@@ -53,11 +64,13 @@ main {
   padding: auto;
 
 }
+
 h1 {
   text-align: center;
   font-size: 6rem;
   word-spacing: 1rem;
 }
+
 h3 {
   font-size: 4rem;
   text-align: center;
@@ -75,9 +88,4 @@ h3 {
   color: var(--color-white);
   border: 2px, solid, var(--color-dark-1);
   padding: 4px 6px;
-}
-
-.img-text {
-  color: var(--color-red);
-  text-shadow: 0 0 10px var(--color-white);
 }
