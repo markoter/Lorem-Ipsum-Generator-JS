@@ -7,19 +7,21 @@
   --ff-primary: 'Flamenco', cursive;
   --ff-secondary: 'Poppins', sans-serif;
 
-  --color-1: #011140;
-  --color-2: #031859;
-  --color-3: #F2EBDC;
-  --color-4: #D9C2A7;
-  --color-5: #733D3D;
+  --color-dark-1: #0A1840;
+  --color-dark-2: #165F8C;
+  --color-light-1: #27B9F2;
+  --color-light-2: #30DFF2;
+  --color-black: #0D0D0D;
+  --color-white: white;
+  --color-background: #F2F2F2;
 }
 
 
 body {
   font-family: var(--ff-primary);
   font-size: 2rem;
-  background-color: var(--color-3);
-  color: var(--color-1);
+  background-color: var(--color-background);
+  color: var(--color-dark-2);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,8 +40,11 @@ body {
 h3 {
   font-size: 4rem;
   text-align: center;
+  color: var(--color-dark-1);
+  
 }
 
 .lorem-text {
   text-align: justify;
 }
+.btn
