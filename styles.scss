@@ -1,20 +1,21 @@
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Jost&family=Poppins&display=swap');
 //variables
 
 :root {
-  --ff-primary: 'Flamenco', cursive;
+  --ff-primary: 'Jost', sans-serif;
   --ff-secondary: 'Poppins', sans-serif;
 
   --color-dark-1: #0A1840;
   --color-dark-2: #165F8C;
   --color-light-1: #27B9F2;
   --color-light-2: #30DFF2;
-  --color-red: #8C0E03  ;
+  --color-red: #8C0E03;
   --color-black: #0D0D0D;
   --color-white: white;
   --color-background: #F2F2F2;
+  --topbar-height: 8rem;
+  --border-radius: 4px;
 }
 
 
@@ -26,24 +27,26 @@ body {
 }
 
 .topbar {
+  border-radius: 1rem;
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: antiquewhite;
-  background-image: url("img/elcarito-8kPgWovE68k-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 7rem;
+  background-color: var(--color-light-2);
+  // background-image: url("img/elcarito-8kPgWovE68k-unsplash.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  height: var(--topbar-height);
   display: flex;
   justify-content: center;
   align-items: center;
 
   .img-text {
     color: var(--color-red);
-    text-shadow: 0 0 2px var(--color-white);
+    text-shadow: 0 0 3px var(--color-white);
     text-align: center;
     text-transform: capitalize;
+
   }
 }
 
@@ -51,7 +54,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: var(--topbar-height);
 
 }
 
@@ -82,10 +85,22 @@ h3 {
   text-align: justify;
 }
 
-.btn {
-  text-transform: uppercase;
-  background: var(--color-dark-2);
-  color: var(--color-white);
-  border: 2px, solid, var(--color-dark-1);
-  padding: 4px 6px;
+.lorem-form {
+  .btn {
+    text-transform: uppercase;
+    background: var(--color-dark-2);
+    color: var(--color-white);
+    border: 2px, solid, var(--color-dark-1);
+    padding: 4px 6px;
+    border-radius: var(--border-radius);
+  }
+
+  input {
+    border-radius: var(--border-radius);
+    border: none;
+    width: 3rem;
+    font-size: 1.1rem;
+    background-color: var(--color-dark-2);
+    color: var(--color-white);
+  }
 }
