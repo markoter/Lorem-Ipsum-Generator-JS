@@ -45,12 +45,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 
-  .img-text {
+  .top-text {
     color: var(--color-dark-1);
     text-shadow: 0 0 3px var(--color-white);
     text-align: center;
     text-transform: capitalize;
+    text-align: center;
+    font-size: 6rem;
 
   }
 }
@@ -69,14 +72,8 @@ main {
   align-items: center;
   justify-content: flex-start;
   max-width: 50rem;
-  padding: auto;
+  padding: 0 1.5rem;
 
-}
-
-h1 {
-  text-align: center;
-  font-size: 6rem;
-  word-spacing: 1rem;
 }
 
 h3 {
@@ -119,4 +116,4 @@ h3 {
   }
 }
 
-@import '.media'
+@import './media'
