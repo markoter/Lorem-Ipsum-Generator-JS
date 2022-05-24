@@ -1,0 +1,36 @@
+@media screen and (max-width: 1050px) {
+    .topbar {
+        .top-text {
+            font-size: 5rem;
+            word-spacing: normal;
+        }
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .topbar {
+        .top-text {
+            font-size: 4rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .topbar {
+        .top-text {
+            font-size: 3rem;
+        }
+    }
+    .lorem-form {
+        flex-direction: column;
+    }
+
+
+}

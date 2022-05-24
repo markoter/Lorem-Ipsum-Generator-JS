@@ -33,24 +33,27 @@ body {
   width: 100%;
   top: 0;
   background-color: var(--color-white);
-  height: var(--topbar-height);
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
-.topbar .img-text {
+.topbar .top-text {
   color: var(--color-dark-1);
   text-shadow: 0 0 3px var(--color-white);
   text-align: center;
   text-transform: capitalize;
+  text-align: center;
+  font-size: 6rem;
 }
 
 main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: var(--topbar-height);
+  margin-top: 9rem;
 }
 
 .section-center {
@@ -59,13 +62,7 @@ main {
   align-items: center;
   justify-content: flex-start;
   max-width: 50rem;
-  padding: auto;
-}
-
-h1 {
-  text-align: center;
-  font-size: 6rem;
-  word-spacing: 1rem;
+  padding: 0 1.5rem;
 }
 
 h3 {
@@ -105,5 +102,30 @@ h3 {
   background-color: var(--color-dark-2);
   color: var(--color-white);
   margin: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .topbar .top-text {
+    font-size: 5rem;
+    word-spacing: normal;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topbar .top-text {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .topbar .top-text {
+    font-size: 3rem;
+  }
+  .lorem-form {
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
