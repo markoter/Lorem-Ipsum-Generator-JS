@@ -18,8 +18,12 @@
   --border-radius: 4px;
 }
 
-
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body {
+  width: 100%;
   font-family: var(--ff-primary);
   font-size: 2rem;
   background-color: var(--color-background);
@@ -27,11 +31,10 @@ body {
 }
 
 .topbar {
-  border-radius: 1rem;
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: var(--color-light-2);
+  background-color: var(--color-white);
   // background-image: url("img/elcarito-8kPgWovE68k-unsplash.jpg");
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -42,7 +45,7 @@ body {
   align-items: center;
 
   .img-text {
-    color: var(--color-red);
+    color: var(--color-dark-1);
     text-shadow: 0 0 3px var(--color-white);
     text-align: center;
     text-transform: capitalize;
@@ -75,9 +78,8 @@ h1 {
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
-  color: var(--color-dark-1);
 
 }
 
@@ -86,6 +88,8 @@ h3 {
 }
 
 .lorem-form {
+  flex-direction: row;
+  align-items: center;
   .btn {
     text-transform: uppercase;
     background: var(--color-dark-2);
