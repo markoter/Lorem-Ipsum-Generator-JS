@@ -100,13 +100,15 @@ h3 {
     background: var(--color-dark-2);
     color: var(--color-white);
     border: none;
-    padding: 4px 6px;
+    padding: 0 6px;
     border-radius: var(--border-radius);
-    height: 2rem;
+    height: 34px;
+    font-size: 1.1rem;
   }
 
   input {
-    height: 2rem;
+    height: 32px;
+    padding-left: 10px;
     border-radius: var(--border-radius);
     border: none;
     width: 3rem;
