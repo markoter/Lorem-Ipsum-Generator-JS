@@ -14,7 +14,8 @@
   --border-radius: 4px;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -77,25 +78,30 @@ h3 {
 }
 
 .lorem-form {
+  display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .lorem-form .btn {
   text-transform: uppercase;
   background: var(--color-dark-2);
   color: var(--color-white);
-  border: 2px, solid, var(--color-dark-1);
+  border: none;
   padding: 4px 6px;
   border-radius: var(--border-radius);
+  height: 2rem;
 }
 
 .lorem-form input {
+  height: 2rem;
   border-radius: var(--border-radius);
   border: none;
   width: 3rem;
   font-size: 1.1rem;
   background-color: var(--color-dark-2);
   color: var(--color-white);
+  margin: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
