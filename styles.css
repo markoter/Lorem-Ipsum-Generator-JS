@@ -118,12 +118,12 @@ h3 {
   .topbar .top-text {
     font-size: 4rem;
   }
-}
-
-@media screen and (max-width: 720px) {
   body {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-width: 720px) {
   .topbar .top-text {
     font-size: 3rem;
   }
