@@ -44,6 +44,13 @@ form.addEventListener("submit", function (e) {
     }
 });
 
+const themeBtn = document.querySelector('.theme-btn');
+themeBtn.addEventListener('click', () => {
+    let element = document.body;
+    element.classList.toggle('light-mode')
+})
+
+
 // import readFileSync from 'fs';
 // //const {readFileSync, promises: fsPromises} = require('fs');
 

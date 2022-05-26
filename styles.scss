@@ -18,6 +18,17 @@
   --border-radius: 4px;
 }
 
+.light-mode {
+  --color-dark-1: #0A1840;
+  --color-dark-2: #f2f2f29d;
+  --color-light-1: #27B9F2;
+  --color-light-2: #30DFF2;
+  --color-red: #8C0E03;
+  --color-black: #0D0D0D;
+  --color-white: #0D0D0D;
+  --color-background: #0A1840;
+}
+
 html,
 body {
   margin: 0;
@@ -123,7 +134,7 @@ h3 {
   width: 70px;
   height: 70px;
   border-radius: 15px;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-dark-1);
   cursor: pointer;
   position: fixed;
   display: flex;
@@ -136,7 +147,7 @@ h3 {
   }
   i {
       font-size: 1.4rem;
-      color: var(--color-grey-2);
+      color: var(--color-white);
       pointer-events: none;
   }
 }
