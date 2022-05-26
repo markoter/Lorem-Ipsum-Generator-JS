@@ -13,16 +13,7 @@
   --topbar-height: 8rem;
   --border-radius: 4px;
 }
-.dark-mode {
-  --color-dark-1: #0A1840;
-  --color-dark-2: #165F8C;
-  --color-light-1: #27B9F2;
-  --color-light-2: #30DFF2;
-  --color-red: #8C0E03;
-  --color-black: #0D0D0D;
-  --color-white: white;
-  --color-background: #F2F2F2;
-}
+
 html,
 body {
   margin: 0;
@@ -91,10 +82,10 @@ h3 {
 }
 
 .lorem-form .btn {
-  cursor: pointer;
   text-transform: uppercase;
   background: var(--color-dark-2);
   color: var(--color-white);
+  cursor: pointer;
   border: none;
   padding: 0 6px;
   border-radius: var(--border-radius);
@@ -128,14 +119,16 @@ h3 {
   align-items: center;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: all .1s ease-in-out;
-  /* &:active {
-      transform: translateY(-3px);
-  }
-  i {
-      font-size: 1.4rem;
-      color: var(--color-grey-2);
-      pointer-events: none;
-  } */
+}
+
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1050px) {
