@@ -13,7 +13,18 @@
   --topbar-height: 8rem;
   --border-radius: 4px;
 }
-
+.dark-mode {
+  --ff-primary: 'Jost', sans-serif;
+  --ff-secondary: 'Poppins', sans-serif;
+  --color-dark-1: #0A1840;
+  --color-dark-2: #165F8C;
+  --color-light-1: #27B9F2;
+  --color-light-2: #30DFF2;
+  --color-red: #8C0E03;
+  --color-black: #0D0D0D;
+  --color-white: white;
+  --color-background: #F2F2F2;
+}
 html,
 body {
   margin: 0;
