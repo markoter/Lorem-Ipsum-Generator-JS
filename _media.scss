@@ -36,4 +36,9 @@
     .lorem-form {
         flex-direction: column;
     }
+
+    .theme-btn {
+        right: 50%;
+        margin-right: -30px; //negative half of width
+    }
 }
