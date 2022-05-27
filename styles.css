@@ -60,7 +60,33 @@ body main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 9rem;
+  margin: 9rem 0;
+}
+
+body .theme-btn {
+  bottom: 10%;
+  right: 3%;
+  width: 60px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: var(--color-main-2);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all .1s ease-in-out;
+}
+
+body .theme-btn:active {
+  transform: translateY(-3px);
+}
+
+body .theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-contrast);
+  pointer-events: none;
 }
 
 .section-center {
