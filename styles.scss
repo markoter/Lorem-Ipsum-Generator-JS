@@ -38,41 +38,43 @@ body {
   font-size: 2rem;
   background-color: var(--color-background);
   color: var(--color-main-2);
-}
 
-.topbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: var(--color-contrast);
-  // background-image: url("img/elcarito-8kPgWovE68k-unsplash.jpg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+  .topbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--color-contrast);
+    // background-image: url("img/elcarito-8kPgWovE68k-unsplash.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 
-  .top-text {
-    color: var(--color-main-1);
-    text-shadow: 0 0 3px var(--color-contrast);
-    text-align: center;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 6rem;
+    .top-text {
+      color: var(--color-main-1);
+      text-shadow: 0 0 3px var(--color-contrast);
+      text-align: center;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 6rem;
+
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 9rem;
 
   }
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 9rem;
 
-}
 
 .section-center {
   display: flex;
@@ -139,13 +141,15 @@ h3 {
   align-items: center;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: all .1s ease-in-out;
+
   &:active {
-      transform: translateY(-3px);
+    transform: translateY(-3px);
   }
+
   i {
-      font-size: 1.4rem;
-      color: var(--color-contrast);
-      pointer-events: none;
+    font-size: 1.4rem;
+    color: var(--color-contrast);
+    pointer-events: none;
   }
 }
 
