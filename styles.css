@@ -19,8 +19,8 @@
   --color-secondary-1: #0A1840;
   --color-secondary-2: #165F8C;
   --color-contrast: #27272a;
-  --color-background: #0A1840;
-  --color-background-2: #152142;
+  --color-background: #152142;
+  --color-background-2: #0A1840;
 }
 
 html,
@@ -38,6 +38,7 @@ body {
   color: var(--color-main-2);
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
+  margin-top: 9rem;
 }
 
 main {
@@ -46,7 +47,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 9rem;
 }
 
 main .section-center {
@@ -149,6 +149,19 @@ main .lorem-form input {
   .topbar .top-text {
     font-size: 5rem;
     word-spacing: normal;
+  }
+  body {
+    display: flex;
+    flex-flow: column;
+  }
+  body .left-column {
+    order: 2;
+  }
+  body .section-center {
+    order: 1;
+  }
+  body .right-column {
+    order: 3;
   }
   h3 {
     font-size: 2rem;

@@ -6,6 +6,23 @@
         }
     }
 
+    body {
+        display: flex;
+        flex-flow: column;
+
+        .left-column {
+            order: 2;
+        }
+
+        .section-center {
+            order: 1;
+        }
+
+        .right-column {
+            order: 3;
+        }
+    }
+
     h3 {
         font-size: 2rem;
     }
