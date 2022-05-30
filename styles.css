@@ -163,7 +163,7 @@ main .lorem-form input {
   body .right-column {
     order: 3;
   }
-  h3 {
+  main h3 {
     font-size: 2rem;
   }
 }
@@ -181,7 +181,7 @@ main .lorem-form input {
   .topbar .top-text {
     font-size: 3rem;
   }
-  .lorem-form {
+  main .lorem-form {
     flex-direction: column;
   }
   .theme-btn {

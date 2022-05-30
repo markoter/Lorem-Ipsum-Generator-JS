@@ -23,9 +23,12 @@
         }
     }
 
-    h3 {
-        font-size: 2rem;
+    main {
+        h3 {
+            font-size: 2rem;
+        }
     }
+
 }
 
 
@@ -50,9 +53,12 @@
         }
     }
 
-    .lorem-form {
-        flex-direction: column;
+    main {
+        .lorem-form {
+            flex-direction: column;
+        }
     }
+
 
     .theme-btn {
         right: 50%;
