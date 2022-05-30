@@ -39,11 +39,60 @@ body {
 
 main {
   height: 100%;
-  background-color: #27B9F2;
+  background-color: var(--color-secondary-1);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 9rem 0 6rem 0;
+  margin-top: 9rem;
+}
+
+main .section-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 50rem;
+  padding: 0 1.5rem;
+}
+
+main h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+main .lorem-text {
+  text-align: justify;
+}
+
+main .lorem-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .lorem-form .btn {
+  text-transform: uppercase;
+  background: var(--color-main-2);
+  color: var(--color-contrast);
+  cursor: pointer;
+  border: none;
+  padding: 0 6px;
+  border-radius: var(--border-radius);
+  height: 34px;
+  font-size: 1.1rem;
+}
+
+main .lorem-form input {
+  height: 32px;
+  padding-left: 10px;
+  border-radius: var(--border-radius);
+  border: none;
+  width: 3rem;
+  font-size: 1.1rem;
+  background-color: var(--color-main-2);
+  color: var(--color-contrast);
+  margin: 1rem;
 }
 
 .topbar {
@@ -65,55 +114,6 @@ main {
   text-transform: capitalize;
   text-align: center;
   font-size: 6rem;
-}
-
-.section-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  max-width: 50rem;
-  padding: 0 1.5rem;
-}
-
-h3 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.lorem-text {
-  text-align: justify;
-}
-
-.lorem-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.lorem-form .btn {
-  text-transform: uppercase;
-  background: var(--color-main-2);
-  color: var(--color-contrast);
-  cursor: pointer;
-  border: none;
-  padding: 0 6px;
-  border-radius: var(--border-radius);
-  height: 34px;
-  font-size: 1.1rem;
-}
-
-.lorem-form input {
-  height: 32px;
-  padding-left: 10px;
-  border-radius: var(--border-radius);
-  border: none;
-  width: 3rem;
-  font-size: 1.1rem;
-  background-color: var(--color-main-2);
-  color: var(--color-contrast);
-  margin: 1rem;
 }
 
 .theme-btn {
